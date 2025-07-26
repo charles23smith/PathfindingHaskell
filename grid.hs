@@ -16,6 +16,6 @@ makeGrid width height =
 data Grid = Grid (Map.Map Coordinate GridType)
    deriving (Show, Eq)
 
-{--Function to get tile information)
+{--Function to get tile information--}
 getTile :: Grid -> Coordinate -> Maybe GridType
 getTile (Grid g) coordinate = Map.lookup coordinate g
